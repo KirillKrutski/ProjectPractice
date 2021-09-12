@@ -5,6 +5,43 @@ public class Box {
     private int height; // высота коробки
     private int depth; // глубина коробки
 
+    public int getWidth() {
+        return width;
+    }
+
+    public void setWidth(int width) {
+        if (width >= 0){
+            this.width = width;
+        } else {
+            System.out.println("Не может такого быть");
+        }
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        if (height >= 0){
+            this.height = height;
+        } else {
+            System.out.println("Не может такого быть");
+        }
+    }
+
+    public int getDepth() {
+        return depth;
+    }
+
+    public void setDepth(int depth) {
+        if (depth >= 0){
+            this.depth = depth;
+        } else {
+            System.out.println("Не может такого быть");
+        }
+        
+    }
+
     // Конструктор для создания клона обьекта
     Box(Box ob) {
         width = ob.width;
